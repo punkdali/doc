@@ -30,10 +30,8 @@ It is recommended to fill the Category field:
     Form categories are plugin's dropdowns. You can add form categories directly when editing a form using the **+** next to category field. You can do the same from **Configuration > Dropdowns > Form category**.
 
 * **Direct access on homepage**: Direct access to the form from the GLPI's simplified interface.
-
 * **Description**: displays in the list forms.
 * **Language**: by default a form is set to the language of its creator. The form will be available only to users using the same language as the form. Choose **All languages** to make the form available to users without language restriction.
-
 * **Header**: displays when the form is displayed.
 * **Need to be validate**: If **Yes** a list of validators is displayed. This is a list of GLPI users (with the right **Validate an incident** or **Validate a request** (in its profile) on an compatible entity with the form's entity. The list of validators is a multiple choice list. If no validator is selected all of them are submitted when the form is being used.
 * **Default form in service catalog**: if **Yes** the form will display in the service catalog without being filtered by the current category or keywords.
@@ -298,13 +296,13 @@ Access types
 
 Three values are available:
 
-* **Public access**: Anonymous users may access the form; you may use it in an intranet.
+* **Public access**: Accountless users may access the form; you may use it in an intranet.
 * **Private access**: Users having a GLPI account may access the form.
 * **Restricted access**: Only users having the specified profiles may access the form.
 
 When a form is set to **Public access** it is possible to enable a simple captcha. This captcha should prevent spamming if a form is accessible from internet.
 
-.. Note:: Captchas are not enabled by default on anonymous forms. Administrators need to enabled them explicitly depending on how the form may be accessible from an hostile network such Internet.
+.. Note:: Captchas are not enabled by default on public forms. Administrators need to enabled them explicitly depending on how the form may be accessible from an hostile network such Internet.
 
 Targets
 -------
